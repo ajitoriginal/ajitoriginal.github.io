@@ -29,41 +29,23 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
+      title: 'Tech Media Platform',
       description:
-        'A full-stack e-commerce application with payment integration, user authentication, and real-time inventory management.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: 'https://github.com',
-      live: 'https://example.com',
+        'A professional networking platform for developers featuring public profiles showcasing skills and GitHub projects, social features for sharing insights via posts, likes, and comments, and real-time community engagement built with the MERN stack.',
+      technologies: ['Node.js', 'React', 'Redux', 'MongoDB'],
+      github: 'https://github.com/ajitoriginal/TechMedia',
+      live: 'https://tech-media-platform-ui.onrender.com/',
       gradient: 'var(--gradient-1)',
     },
     {
-      title: 'Task Management App',
+      title: 'ERP',
       description:
-        'Collaborative task management tool with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      technologies: ['React', 'Firebase', 'Tailwind CSS'],
+        'An internal Enterprise Resource Planning system integrating inventory management, employee tracking, financial operations, and cross-departmental resource allocation. Features real-time analytics, automated workflows, and role-based access control for streamlined business operations.',
+      technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
       github: 'https://github.com',
-      live: 'https://example.com',
+      live: 'https://erp.decorpot.com/',
       gradient: 'var(--gradient-2)',
-    },
-    {
-      title: 'Weather Dashboard',
-      description:
-        'Interactive weather application with location-based forecasts, historical data visualization, and personalized alerts.',
-      technologies: ['React', 'OpenWeather API', 'Chart.js'],
-      github: 'https://github.com',
-      live: 'https://example.com',
-      gradient: 'var(--gradient-3)',
-    },
-    {
-      title: 'Social Media Analytics',
-      description:
-        'Analytics dashboard for social media metrics with data visualization, trend analysis, and automated reporting.',
-      technologies: ['React', 'Python', 'PostgreSQL', 'D3.js'],
-      github: 'https://github.com',
-      live: 'https://example.com',
-      gradient: 'var(--gradient-1)',
-    },
+    }
   ];
 
   return (

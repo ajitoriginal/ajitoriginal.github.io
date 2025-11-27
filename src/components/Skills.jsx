@@ -7,12 +7,20 @@ import {
   FaGitAlt,
   FaDocker,
   FaAws,
+  FaHtml5,
+  FaCss3Alt,
+  FaLinux,
 } from 'react-icons/fa';
 import {
   SiJavascript,
   SiTypescript,
   SiMongodb,
   SiRedis,
+  SiJira,
+  SiCplusplus,
+  SiMysql,
+  SiRedux,
+  SiSocketdotio,
 } from 'react-icons/si';
 import pythonLogo from '../assets/Python-logo-notext.svg.png';
 import './Skills.css';
@@ -47,8 +55,16 @@ const Skills = () => {
     { name: 'React', icon: <FaReact />, color: '#61DAFB' },
     { name: 'JavaScript', icon: <SiJavascript />, color: '#F7DF1E' },
     { name: 'TypeScript', icon: <SiTypescript />, color: '#3178C6' },
+    { name: 'HTML', icon: <FaHtml5 />, color: '#E34F26' },
+    { name: 'CSS', icon: <FaCss3Alt />, color: '#1572B6' },
+    { name: 'Redux', icon: <SiRedux />, color: '#764ABC' },
+    { name: 'MySQL', icon: <SiMysql />, color: '#4479A1' },
+    { name: 'C++', icon: <SiCplusplus />, color: '#00599C' },
+    { name: 'WebSockets', icon: <SiSocketdotio />, color: '#010101' },
     { name: 'Git', icon: <FaGitAlt />, color: '#F05032' },
     { name: 'Docker', icon: <FaDocker />, color: '#2496ED' },
+    { name: 'Linux', icon: <FaLinux />, color: '#FCC624' },
+    { name: 'JIRA', icon: <SiJira />, color: '#0052CC' },
     { name: 'AWS', icon: <FaAws />, color: '#FF9900' },
   ];
 
