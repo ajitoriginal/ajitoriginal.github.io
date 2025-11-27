@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { FaCode, FaLightbulb, FaRocket } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -27,21 +26,22 @@ const About = () => {
     },
   };
 
-  const features = [
+  const stats = [
     {
-      icon: <FaCode />,
-      title: 'Clean Code',
-      description: 'Writing maintainable, scalable, and efficient code is my priority.',
+      value: '4+',
+      label: 'Years Experience',
     },
     {
-      icon: <FaLightbulb />,
-      title: 'Problem Solver',
-      description: 'I love tackling complex challenges and finding creative solutions.',
+      value: '10+',
+      label: 'Projects Completed',
     },
     {
-      icon: <FaRocket />,
-      title: 'Fast Learner',
-      description: 'Always staying updated with the latest technologies and best practices.',
+      value: '15+',
+      label: 'Technologies',
+    },
+    {
+      value: '3+',
+      label: 'Happy Companies',
     },
   ];
 
@@ -55,39 +55,34 @@ const About = () => {
       >
         <motion.div variants={itemVariants} className="section-header">
           <h2>About Me</h2>
-          <div className="section-underline"></div>
         </motion.div>
 
         <div className="about-content">
           <motion.div className="about-text" variants={itemVariants}>
             <p>
-              I'm a passionate <strong>Full Stack Developer</strong> with 5+ years of
-              experience building web applications. I specialize in creating dynamic,
-              user-friendly interfaces and robust backend systems.
+              Results-driven Software Engineer with <strong>4+ years of experience</strong> in
+              building and optimizing scalable full-stack web applications. Proven
+              expertise in integrating real-time communication tools, automating
+              financial workflows, and deploying robust cloud-based solutions.
             </p>
             <p>
-              My journey in web development started with a curiosity about how things
-              work on the internet. Today, I've had the privilege of working with
-              startups, agencies, and corporations to bring ideas to life.
-            </p>
-            <p>
-              When I'm not coding, you can find me exploring new technologies,
-              contributing to open-source projects, or sharing knowledge with the
-              developer community.
+              Adept at designing RESTful APIs, optimizing MongoDB queries, and
+              delivering high-performance user interfaces. Collaborative team
+              player with strong communication and leadership skills, committed
+              to agile practices and continuous improvement.
             </p>
           </motion.div>
 
-          <div className="about-features">
-            {features.map((feature, index) => (
+          <div className="about-stats">
+            {stats.map((stat, index) => (
               <motion.div
                 key={index}
-                className="feature-card"
+                className="stat-card"
                 variants={itemVariants}
                 whileHover={{ scale: 1.05, y: -5 }}
               >
-                <div className="feature-icon">{feature.icon}</div>
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
+                <h3 className="stat-value">{stat.value}</h3>
+                <p className="stat-label">{stat.label}</p>
               </motion.div>
             ))}
           </div>

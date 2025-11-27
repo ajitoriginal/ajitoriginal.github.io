@@ -46,13 +46,11 @@ const Hero = () => {
         </motion.h1>
 
         <motion.h2 variants={itemVariants} className="hero-subtitle">
-          Software Development Engineer
+          Software Development Engineer (Full Stack)
         </motion.h2>
 
         <motion.p variants={itemVariants} className="hero-description">
-          I craft beautiful, responsive web applications with modern technologies.
-          Passionate about creating seamless user experiences and writing clean,
-          maintainable code.
+          Building scalable web applications with modern technologies. Passionate about creating efficient, user-friendly solutions.
         </motion.p>
 
         <motion.div className="hero-buttons" variants={itemVariants}>
@@ -76,7 +74,7 @@ const Hero = () => {
 
         <motion.div className="hero-socials" variants={itemVariants}>
           <motion.a
-            href="https://github.com"
+            href="https://github.com/ajitoriginal"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2, y: -5 }}
@@ -85,7 +83,7 @@ const Hero = () => {
             <FaGithub />
           </motion.a>
           <motion.a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/ajit-original/"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.2, y: -5 }}
@@ -94,7 +92,7 @@ const Hero = () => {
             <FaLinkedin />
           </motion.a>
           <motion.a
-            href="mailto:johndoe@example.com"
+            href="mailto:ajitsinghoriginal@gmail.com"
             whileHover={{ scale: 1.2, y: -5 }}
             whileTap={{ scale: 0.9 }}
           >

@@ -4,7 +4,6 @@ import { useRef } from 'react';
 import {
   FaReact,
   FaNode,
-  FaPython,
   FaGitAlt,
   FaDocker,
   FaAws,
@@ -13,10 +12,9 @@ import {
   SiJavascript,
   SiTypescript,
   SiMongodb,
-  SiPostgresql,
   SiRedis,
-  SiTailwindcss,
 } from 'react-icons/si';
+import pythonLogo from '../Python-logo-notext.svg.png';
 import './Skills.css';
 
 const Skills = () => {
@@ -43,15 +41,12 @@ const Skills = () => {
   };
 
   const skills = [
+    { name: 'Node.js', icon: <FaNode />, color: '#339933' },
+    { name: 'Python', icon: <img src={pythonLogo} alt="Python" style={{ width: '80%', height: '90%', objectFit: 'contain' }} />, isImage: true },
+    { name: 'MongoDB', icon: <SiMongodb />, color: '#47A248' },
+    { name: 'React', icon: <FaReact />, color: '#61DAFB' },
     { name: 'JavaScript', icon: <SiJavascript />, color: '#F7DF1E' },
     { name: 'TypeScript', icon: <SiTypescript />, color: '#3178C6' },
-    { name: 'React', icon: <FaReact />, color: '#61DAFB' },
-    { name: 'Node.js', icon: <FaNode />, color: '#339933' },
-    { name: 'Python', icon: <FaPython />, color: '#3776AB' },
-    { name: 'MongoDB', icon: <SiMongodb />, color: '#47A248' },
-    { name: 'PostgreSQL', icon: <SiPostgresql />, color: '#4169E1' },
-    { name: 'Redis', icon: <SiRedis />, color: '#DC382D' },
-    { name: 'Tailwind', icon: <SiTailwindcss />, color: '#06B6D4' },
     { name: 'Git', icon: <FaGitAlt />, color: '#F05032' },
     { name: 'Docker', icon: <FaDocker />, color: '#2496ED' },
     { name: 'AWS', icon: <FaAws />, color: '#FF9900' },
@@ -85,7 +80,10 @@ const Skills = () => {
                 transition: { duration: 0.3 },
               }}
             >
-              <div className="skill-icon" style={{ color: skill.color }}>
+              <div
+                className="skill-icon"
+                style={skill.color ? { color: skill.color } : {}}
+              >
                 {skill.icon}
               </div>
               <span className="skill-name">{skill.name}</span>

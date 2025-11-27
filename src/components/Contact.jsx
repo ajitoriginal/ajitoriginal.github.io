@@ -51,27 +51,20 @@ const Contact = () => {
     {
       icon: <FaEnvelope />,
       title: 'Email',
-      value: 'johndoe@example.com',
-      link: 'mailto:johndoe@example.com',
-    },
-    {
-      icon: <FaPhone />,
-      title: 'Phone',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567',
+      value: 'ajitsinghoriginal@gmail.com',
+      link: 'mailto:ajitsinghoriginal@gmail.com',
     },
     {
       icon: <FaMapMarkerAlt />,
       title: 'Location',
-      value: 'San Francisco, CA',
+      value: 'New Delhi, IN',
       link: null,
     },
   ];
 
   const socialLinks = [
-    { icon: <FaLinkedin />, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <FaGithub />, url: 'https://github.com', label: 'GitHub' },
-    { icon: <FaTwitter />, url: 'https://twitter.com', label: 'Twitter' },
+    { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/ajit-original/', label: 'LinkedIn' },
+    { icon: <FaGithub />, url: 'https://github.com/ajitoriginal', label: 'GitHub' },
   ];
 
   return (

@@ -40,7 +40,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <a href="#home">JD</a>
+          <a href="#home">AS</a>
         </motion.div>
 
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
