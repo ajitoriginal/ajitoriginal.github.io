@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <p>
-          Made with <FaHeart className="heart-icon" /> by John Doe
+          Made with <FaHeart className="heart-icon" /> by Ajit Singh
         </p>
         <p className="copyright">
           &copy; {currentYear} All rights reserved.

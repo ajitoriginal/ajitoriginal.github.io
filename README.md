@@ -127,6 +127,6 @@ This project is open source and available under the MIT License.
 
 ## Contact
 
-John Doe - johndoe@example.com
+Ajit Singh - ajitsinghoriginal@gmail.com
 
 Project Link: [https://github.com/yourusername/portfolio](https://github.com/yourusername/portfolio)
