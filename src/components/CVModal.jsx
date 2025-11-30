@@ -15,7 +15,10 @@ const CVModal = ({ isOpen, onClose, onDownload }) => {
       setError('');
       onDownload();
       setCode('');
-      onClose();
+      // Delay closing modal to allow download to initiate
+      setTimeout(() => {
+        onClose();
+      }, 100);
     } else {
       setError('Incorrect code. Please try again.');
       setCode('');
