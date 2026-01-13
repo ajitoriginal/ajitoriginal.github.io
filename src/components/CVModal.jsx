@@ -11,6 +11,17 @@ const CVModal = ({ isOpen, onClose, onDownload }) => {
     e.preventDefault();
     const secretCode = import.meta.env.VITE_CV_SECRET_CODE;
 
+    // Prevent access if no secret code is configured or if input is empty
+    if (!secretCode) {
+      setError('Secret code not configured. Please contact Ajit.');
+      return;
+    }
+
+    if (!code || code.trim() === '') {
+      setError('Please enter a code.');
+      return;
+    }
+
     if (code === secretCode) {
       setError('');
       onDownload();
